@@ -387,6 +387,7 @@ public class InstanceConfiguration implements Describable<InstanceConfiguration>
     private Scheduling scheduling() {
         Scheduling scheduling = new Scheduling();
         scheduling.setPreemptible(preemptible);
+        scheduling.setOnHostMaintenance("TERMINATE");
         return scheduling;
     }
 
